@@ -1,0 +1,25 @@
+{
+  "name": "spot_made_of_iron",
+  "description": "Web application serving Iron Maiden albums.",
+  "main": "main.js",
+  "authors": [
+    "Vincent Dal Maso"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Urriel/Spot_made_of_iron",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/assets",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "^1.5.5",
+    "bootstrap": "^3.3.6",
+    "angular-toastr": "^1.7.0",
+    "angular": "^1.5.5"
+  }
+}

@@ -1,0 +1,18 @@
+//
+   Created by Urriel.
+
+extends layout
+
+block body
+    .container(ng-controller='MainController as controller')
+        .row
+            .col-md-12
+                input(type='text' ng-model='search', placeholder='Filter')
+                .row
+                    div(ng-repeat='album in controller.list | filter: {name: search}')
+                        .clearfix(ng-if='$index % 3 === 0')
+                        .col-sm-6.col-md-4
+                            .thumbnail
+                                img(ng-src='{{album.image.url}}')
+                                .caption
+                                    h3 {{album.name}}
